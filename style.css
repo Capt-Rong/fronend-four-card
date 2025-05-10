@@ -1,0 +1,171 @@
+/* presets */
+:root {
+    --grey-500: #4D4F62;
+    --grey-400: #6A7178;
+    --white: #fff;
+    --red: #EA5454;
+    --cyan: #44D3D2;
+    --blue: #549EF2;
+    --orange: #FCAE4A;
+}
+
+.text-preset-1 {
+    color: var(--grey-500);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.25;
+}
+
+.text-preset-2 {
+    color: var(--grey-500);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: 0.25;
+}
+
+.text-preset-3 {
+    color: var(--grey-500);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0;
+}
+
+.text-preset-4 {
+    color: var(--grey-500);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+.text-preset-5 {
+    color: var(--grey-400);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+/* global settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* layout */
+
+main {
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 74px;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 540px;
+}
+
+.text-title {
+    width: 100%;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-middle-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+/* grids */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 32px;
+    width: 350px;
+    height: 250px;
+    padding: 32px;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5)
+}
+
+.card.supervisor {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-top: 4px solid var(--cyan);
+}
+
+.card.team-builder {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border-top: 4px solid var(--red);
+}
+
+.card.karma {
+    grid-column: 2/3;
+    grid-row: 2 / 3;
+    border-top: 4px solid var(--orange);
+}
+
+.card.calculator {
+    grid-column: 3/4;
+    grid-row: 1 / 2;
+    border-top: 4px solid var(--blue);
+}
+
+/* images */
+.card-icon {
+    max-width: 64px;
+    max-height: 64px;
+}
+/* text */
+
+
+/* RWD */
