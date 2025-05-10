@@ -165,7 +165,44 @@ main {
     max-width: 64px;
     max-height: 64px;
 }
-/* text */
-
 
 /* RWD */
+@media (max-width: 768px){
+    .card-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+    }
+    .card-middle-wrapper {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .card {
+        max-width: 314px;
+    }
+}
+
+@media (max-width: 375px){
+    main {
+        gap: 60px;
+    }
+
+    .title-wrapper{
+        max-width: 316px;
+    }
+    .card-middle-wrapper {
+        flex-direction: column;
+    }
+    .text-preset-2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .text-preset-1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .text-preset-4 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}
